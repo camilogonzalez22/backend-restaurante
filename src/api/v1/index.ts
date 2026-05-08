@@ -6,6 +6,9 @@ import TasksRouter from "../../modules/tasks/tasks.routes";
 import CommentsRouter from "../../modules/comments/comments.routes";
 import ClientsRouter from "../../modules/clients/clients.routes";
 import SalesRouter from "../../modules/sales/sales.routes";
+import ProductsRouter from "../../modules/products/product.routes";
+import TablesRouter from "../../modules/tables/table.routes";
+import ReservationsRouter from "../../modules/reservations/reservation.routes";
 
 const router = Router();
 
@@ -16,6 +19,9 @@ router.use('/tasks', TasksRouter);
 router.use('/comments', CommentsRouter); 
 router.use('/clients', ClientsRouter);
 router.use('/sales', SalesRouter);
+router.use('/products', ProductsRouter);
+router.use('/tables', TablesRouter);
+router.use('/reservations', ReservationsRouter);
 
 
 
