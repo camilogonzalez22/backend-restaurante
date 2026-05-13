@@ -5,6 +5,8 @@ import helmet from 'helmet';
 import morgan from 'morgan';
 import v1Routes from "./api/v1/index";
 import { errorMiddleware } from "./middlewares/error.middleware";
+import SwaggerUi from 'swagger-ui-express';
+import { openApiSpec } from './config/openapi';
 
 
 export const app = express();
@@ -14,6 +16,8 @@ app.use(morgan('dev'));
 app.use(cors());
 app.use(compression());
 app.use(express.json());
+
+app.use('/api/v1/docs', SwaggerUi.serve, SwaggerUi.setup(openApiSpec));
 
 app.use('/api/v1', v1Routes);
 
