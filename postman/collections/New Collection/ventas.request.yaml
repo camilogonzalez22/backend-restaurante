@@ -1,0 +1,5 @@
+$kind: http-request
+name: ventas
+url: ""
+method: GET
+order: 4501508839215991

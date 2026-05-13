@@ -6,6 +6,20 @@ import { authMiddleware } from "../../middlewares/auth.middleware";
 
 const router = Router();
 const projectsController = new ProjectsController();
+/**
+ * @openapi
+ * /projects:
+ *   post:
+ *     summary: Crear proyecto
+ *    tags: [Projects]
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       201:
+ *         description: Proyecto creado
+ *       401:
+ *         description: No autorizado
+ */
 
 router.post("/", authMiddleware, validate(createProjectSchema), projectsController.create);
 router.get("/", authMiddleware, projectsController.findAll);

@@ -34,4 +34,15 @@ export class SalesRepository {
       }
     );
   }
+  async put(id: string): Promise<UpdateResult> {
+    return this.collection().updateOne(
+      { _id: new ObjectId(id) },
+      {
+        $set: {
+          isActive: false,
+          updatedAt: new Date(),
+        },
+      }
+    );
+  }
 }

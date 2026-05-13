@@ -59,4 +59,16 @@ export class SalesController {
       next(error);
     }
   };
+  put = async (
+    req: Request<{ id: string }>,
+    res: Response,
+    next: NextFunction
+  ) => {
+    try {
+      const data = await this.service.put(req.params.id);
+      res.json(data);
+    } catch (error: any) {
+      next(error);
+    }
+  }
 }

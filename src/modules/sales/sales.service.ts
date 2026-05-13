@@ -42,4 +42,6 @@ export class SalesService {
   async delete(id: string) {
     return await this.repository.delete(id);
   }
-}
+  async put(id: string) {
+    return await this.repository.put(id);
+}}

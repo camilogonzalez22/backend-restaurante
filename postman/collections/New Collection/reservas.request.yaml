@@ -1,0 +1,5 @@
+$kind: http-request
+name: reservas
+url: ""
+method: GET
+order: 4498958647614299

@@ -1,5 +1,6 @@
 import { Request, Response, NextFunction } from "express";
 import { AuthService } from "./auth.service";
+import { register } from "node:module";
 
 export class AuthController {
   private service = new AuthService();

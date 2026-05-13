@@ -1,6 +1,7 @@
 import { AuthRepository } from "./auth.repository";
 import { comparePassword } from "../../libs/bcrypt";
-import { signToken } from "../../libs/jwt";
+import { signToken } from "../../libs/jwt"; 
+import { register } from "node:module";
 
 export class AuthService {
   private repository = new AuthRepository();
