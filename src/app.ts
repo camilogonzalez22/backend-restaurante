@@ -5,8 +5,9 @@ import helmet from 'helmet';
 import morgan from 'morgan';
 import v1Routes from "./api/v1/index";
 import { errorMiddleware } from "./middlewares/error.middleware";
-import SwaggerUi from 'swagger-ui-express';
-import { openApiSpec } from './config/openapi';
+import { openApiSpec } from "./config/openapi";
+import SwaggerUi from 'swagger-ui-express';                                               
+
 
 
 export const app = express();
