@@ -1,3 +1,4 @@
+import { ServerDescription } from "mongodb";
 import swaggerJsdoc from "swagger-jsdoc";
 
 const options = {
@@ -11,6 +12,11 @@ const options = {
     },
 
     servers: [
+      {
+        
+        url: "https://backend-restaurante-hri3.onrender.com/api/v1/docs",
+        description: "Servidor de producción",
+      },
       {
         url: "http://localhost:3000/api/v1",
         description: "Servidor local",
