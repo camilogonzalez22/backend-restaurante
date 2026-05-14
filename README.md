@@ -215,6 +215,6 @@ npm start
 
 ## Camilo Alexander González Huertas
 
-Estudiante de Ingeniería de Sistemas y desarrollador backend enfocado en aplicaciones web modernas con Node.js, TypeScript y MongoDB.
+
 
 ---
