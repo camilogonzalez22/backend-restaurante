@@ -95,15 +95,6 @@ Swagger permite:
 
 # 📦 Módulos implementados
 
-## 👤 Users
-Gestión de usuarios del sistema.
-
-- Registro de usuarios
-- Consulta de usuarios
-- Roles de usuario
-
----
-
 ## 🔑 Auth
 Sistema de autenticación.
 
